@@ -4,24 +4,80 @@
         <title>Meu Portifolio</title>
         
         <style>
+            body{
+                background-color:#e7e7e7;
+                padding: 20px;
+                font-family: Arial;
+            }
+            .main{
+                max-width: 1000px;
+                margin: auto;
+            }
             h1{
                 font-size: 50px;
-
+                word-break: break-all;
             }
 
-            body{
-                background-color: red;
+            .row{
+                margin: 8px -16px;
             }
+            .column{
+                border: 1px solid black;
+                float: left;
+                width: 25%;
+            }
+            .content{
+                background-color: white;
+                padding: 15px;
+            }
+
         </style>
 
     </head>
 
 <body style="background-color:azure;">
-    <h1>Portifolio adler</h1>
-    <p>-texto-</p>
 
-    <h1>PW</h1>
-    <h1>PW</h1>
-    <h1 style="font-size: 12px;">HTML</h1>
+<div class="main">
+    <h1>Portifolio</h1>
+    <hr/>
+    <h2>Adler Mateus Cachuba</h2>
+    <p>Graduado em gastronomia pela PUC-PR, graduando em engenharia de software na IFPR.</p>
+    <p>Meus contatos são: ... </p>
+
+    <div class="row">
+        <div class="column">
+            <div class="content">
+            <img src="imagens/img1.jpg" alt="Imagem teste 1" style="width: 100%;">
+            <h3>Imagem 1 </h3>
+            <p>aaaa </p>
+        </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="imagens/img2.jpg" alt="Imagem teste 2" style="width: 100%;">
+                <h3>Imagem 2 </h3>
+                <p>aaaa </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="imagens/img3.jpg" alt="Imagem teste 3" style="width: 100%;">
+                <h3>Imagem 3 </h3>
+                <p>aaaa </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                espaço 4
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
 </body>
 </html>
