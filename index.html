@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-
+<meta name="viewport" content="width=devide-width, initial-scale=1.0">
 <head>
     <title>Meu Portifolio</title>
 
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body {
-            background-color: white;
+            background-color: #e7e7e7;
             padding: 20px;
             font-family: Arial;
         }
@@ -41,6 +44,17 @@
             width: 25%;
         }
 
+        @media screen and (max-width:900px) {
+            .column{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .column{
+                width: 100%;
+            }
+        }
         .content {
             background-color: white;
             padding: 10px;
