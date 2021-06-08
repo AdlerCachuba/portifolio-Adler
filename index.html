@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+
 <head>
+
+
     <title>Meu Portifolio</title>
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
+
         body {
             background-color: #e7e7e7;
             padding: 20px;
@@ -45,19 +52,80 @@
         }
 
         @media screen and (max-width:900px) {
-            .column{
+            .column {
                 width: 50%;
             }
         }
 
         @media screen and (max-width:600px) {
-            .column{
+            .column {
                 width: 100%;
             }
         }
+
         .content {
             background-color: white;
             padding: 10px;
+        }
+
+        .footer-basic {
+            padding: 40px 0;
+            background-color: #ffffff;
+            color: #4b4c4d;
+        }
+
+        .footer-basic ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .footer-basic li {
+            padding: 0 10px;
+        }
+
+        .footer-basic ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity: 1;
+        }
+
+        .footer-basic .social {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .footer-basic .social>a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            margin: 0 8px;
+            color: inherit;
+            opacity: 0.75;
+        }
+
+        .footer-basic .social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+            margin-bottom: 0;
         }
     </style>
 
@@ -66,32 +134,46 @@
 <body style="background-color:azure;">
 
     <div class="main">
-        <h1>Portifolio</h1>
+        <h1>Portifólio</h1>
         <hr />
         <h2>Adler Mateus Cachuba</h2>
         <p>Graduado em gastronomia pela PUC-PR, graduando em engenharia de software na IFPR.</p>
-        <p>Meus contatos são: ... </p>
+        <p> </p>
 
         <div class="row">
             <div class="column">
                 <div class="content">
-                    <img src="imagens/img1.jpg" alt="Imagem teste 1" style="width: 100%;">
-                    <h3>Imagem 1 </h3>
-                    <p>aaaa </p>
+                    <div>
+                        <!--style="height: 240px;"!-->
+                        <img src="imagens/img1.jpg" alt="Imagem teste 1" style="width: 100%;">
+                    </div>
+                    <h3>Flutter Laravel</h3>
+                    <p>Projeto em desenvolvimento, uma API Rest feita em laravel para ser consumida em flutter.
+                        A api pode ser conferida aqui: <a href="https://github.com/AdlerCachuba/Museu-Gengar">Museu
+                            Gengar</a>.</p>
                 </div>
             </div>
             <div class="column">
                 <div class="content">
                     <img src="imagens/img2.jpg" alt="Imagem teste 2" style="width: 100%;">
-                    <h3>Imagem 2 </h3>
-                    <p>aaaa </p>
+                    <h3>Xadrez Java </h3>
+                    <p>Aplicação desenvolvida simulando um tabuleiro de xadrez em java, ainda em construção.</p>
                 </div>
             </div>
             <div class="column">
                 <div class="content">
                     <img src="imagens/img3.jpg" alt="Imagem teste 3" style="width: 100%;">
-                    <h3>Imagem 3 </h3>
-                    <p>aaaa </p>
+                    <h3>Inglês</h3>
+                    <p>Inglês avançado, com certificações TOEIC Bridge e TOEFL.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="imagens/img4.jpg" alt="Imagem teste 4" style="width: 100%;">
+                    <h3>Artigos</h3>
+                    <p>Durante minha trajetória academica, publiquei alguns artigos cientificos
+                        que podem ser conferidos no link: <a href="http://lattes.cnpq.br/4295262716644501">Lattes</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -99,13 +181,28 @@
 
         <div class="content">
             <img src="imagens/img5.jpg" style="width: 100%">
-            <h3>Algum texto mais importante</h3>
-            <p>Aaaaaa</p>
+            <h3>Meu intercâmbio</h3>
+            <p>Fui participante do programa Seeds for the Future 2020 da Huawei realizando cursos sobre 5G, Cloud
+                Computing e A.I.
+                Mais informações podem ser vistas no link:
+                <a href="https://www.huawei.com/minisite/seeds-for-the-future/index.html">Seeds for the Future</a>.
+            </p>
         </div>
 
-    </div>
+        <div class="content">
+        </div>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.facebook.com/Aadler.mateus"><i class="icon ion-social-facebook"></i>
+                        <a href="https://www.linkedin.com/in/adler-mateus-cachuba-726428199/"><i
+                                class="icon ion-social-linkedin"></i>
+                            <a href="https://www.instagram.com/adyelf3/"><i class="icon ion-social-instagram"></i></a>
+                        </a>
+                        <p class="copyright">Adler Mateus Cachuba © 2021</p>
+            </footer>
+        </div>
 
-
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->  
 </body>
-
 </html>
